@@ -1,10 +1,10 @@
 - name: vars preference
   hosts: local
   connection: local
-  # vars:
-  #   NAME: from play level
-  vars_files:
-  - course.yml
+  vars:
+    NAME: from play level
+  # vars_files:
+  # - course.yml
   vars_prompt:
   - name: NAME
     prompt: What is your NAME?
