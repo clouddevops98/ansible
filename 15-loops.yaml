@@ -1,14 +1,13 @@
-- name: Install packages
+- name: loops
   hosts: local
   connection: local
-  become: yes
   tasks:
   - name: print names
-    ansible.builtin.package:
-      name: "{{ item }}"
-      state: latest
+    ansible.builtin.debug:
+      msg: "Hello {{ item }}" # item is reserved
     loop:
-    - nginx
-    - mysql
-    - zip
+    - Ramesh
+    - Suresh
+    - Raheem
+    - John
   
