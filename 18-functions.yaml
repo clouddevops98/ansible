@@ -31,7 +31,7 @@
 
   - name: converting map to map
     ansible.builtin.debug:
-      msg: "tags are: {{ tags |  items2dict }}"
+      msg: "Tags are: {{ tags |  items2dict }}"
   
 
 
