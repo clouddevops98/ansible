@@ -59,6 +59,6 @@
 
   - name: check IP is valid or not
     ansible.builtin.debug: 
-      msg: "{{ ipaddress | ansible.utils.ip4 }}"
+      msg: "{{ ipaddress | ansible.utils.ipv4 }}"
 
   
