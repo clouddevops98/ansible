@@ -4,6 +4,7 @@
   vars:
     technologies: DevOps, Linux, Shell, Ansible
     name: "Somayya adusumalli A"
+    gmail: SOMAYYA998@GMAIL.COM
     tags:
       Application: payment
       Environment: dev
