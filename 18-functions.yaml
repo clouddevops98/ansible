@@ -5,7 +5,7 @@
     technologies: DevOps, Linux, Shell, Ansible
     name: "Somayya adusumalli A"
     gmail: SOMAYYA998@GMAIL.COM
-    ipaddress: "345.168.0.1"
+    ipaddress: "192.168.0.1"
     tags:
       Application: payment
       Environment: dev
