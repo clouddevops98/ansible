@@ -71,7 +71,7 @@
       msg: "{{ command_output }}"
 
   - name: redirect the output
-    ansible.builtin.debug: s -ltr > /tmp/output.txt
+    ansible.builtin.debug: ls -ltr > /tmp/output.txt
     register: redirect_output
     ignore_error: true
 
