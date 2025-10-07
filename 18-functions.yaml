@@ -71,12 +71,12 @@
       msg: "{{ command_output }}"
 
   - name: redirect the output
-    ansible.builtin.debug: ls -ltr > /tmp/output.txt
+    ansible.builtin.command: ls -ltr > /tmp/output.txt
     register: redirect_output
-    ignore_error: true
+    ignore_errors: true
 
   - name: print redirect_output
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "{{ redirect_output }}"
 
   - name: redirect the output using shell
@@ -84,7 +84,6 @@
     register: redirect_output
 
   - name: print redirect_output shell
-    ansible_builtin.debug:
+    ansible.builtin.debug:
       msg: "{{ redirect_output }}"
-
   
